@@ -20,18 +20,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.exmample.utils.security</groupId>
+            <groupId>com.example.utils.security</groupId>
             <artifactId>resource-config</artifactId>
             <version>1.0.1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>

@@ -12,4 +12,11 @@ public class VersionController {
     ResponseEntity<String> getVersion() {
         return new ResponseEntity<>("Omega", HttpStatus.OK);
     }
+
+    @GetMapping(value="/v1/scheduled")
+    ResponseEntity<String> getScheduled() {
+
+        //This would get the latest results of the scheduled event
+        return new ResponseEntity<>("Scheduled results", HttpStatus.OK);
+    }
 }

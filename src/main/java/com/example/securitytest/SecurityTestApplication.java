@@ -1,12 +1,12 @@
 package com.example.securitytest;
 
-import com.example.rabbitmqconfig.annotations.EnableRabbitClient;
-import com.example.utils.security.resource.annotations.EnableExampleResourceServer;
+import com.example.oauth2clientresouceserver.EnableExampleResourceServerClient;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
-@EnableRabbitClient
-@EnableExampleResourceServer
+@EnableScheduling
+@EnableExampleResourceServerClient
 @SpringBootApplication
 public class SecurityTestApplication {
 

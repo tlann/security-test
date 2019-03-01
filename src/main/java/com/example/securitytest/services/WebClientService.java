@@ -1,6 +1,5 @@
 package com.example.securitytest.services;
 
-import com.example.oauth2clientresouceserver.config.WebClientSecurityConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
@@ -29,7 +28,6 @@ public class WebClientService {
         WebClient webclient = getWebclient();
         Mono<String> res =
                 webclient.get().uri(uri)
-                .attributes(WebClientSecurityConfig.getExchangeFilterWith("keycloak"))
                 .accept(MediaType.APPLICATION_STREAM_JSON)
                 .retrieve()
                 .bodyToMono(String.class);

@@ -13,15 +13,12 @@ public class WebClientService {
     @Value("${webclient.uri}")
     String uri;
 
-    private WebClient.Builder webClientBuilder;
-
     @Autowired
-    public WebClientService(WebClient.Builder wcb) {
-        this.webClientBuilder = wcb;
-    }
+    WebClient client;
+
 
     public WebClient getWebclient() {
-        return webClientBuilder.build();
+        return client;
     }
 
     public String getVersion() {
